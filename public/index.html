@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <section id="search-league">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 justify-center justify-items-center content-center items-center">
+            <h1 class="m-5 text-6xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-500 font-bold text-center col-span-4">
+              WikiFutbol
+            </h1>
+            
+            <!-- <label class="text-xl text-stone-300 col-span-4" for="search-by-country">Escriba un país...</label> -->
+            <input class="m-2 text-neutral-400 text-lg font-medium text-center border-2 rounded-2xl w-80 h-10 focus:outline-none focus:ring focus:border-blue-200 col-span-4 shadow-lg placeholder:italic placeholder:text-stone-300" type="text" id="search-by-country" placeholder="type a country...">
+            <button class="p-2 mb-6 w-60 text-white text-xl font-medium rounded-3xl bg-blue-300 hover:bg-blue-400 shadow-md shadow-slate-500/80 col-span-4" id="search-btn">Search</button>
+        </div>
+    </section>
+    <section id="info-league">
+      <div id="app"></div>
+    </section>
+    <script src="/js/index.js"></script>
+</body>
+</html>
