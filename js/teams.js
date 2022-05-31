@@ -14,15 +14,17 @@ const mainContainer = document.querySelector('#app-teams');
 
 const nav = document.createElement('div');
 nav.textContent = league;
-nav.className = 'bg-gradient-to-r from-cyan-500 to-violet-500 font-bold';
+nav.className = 'bg-gradient-to-r from-cyan-500 to-violet-500 font-bold text-white';
 
 const allComponents = [];
 
 jsonData.teams.forEach(team => {
     const container = document.createElement('div');
+    container.className = 'bg-blue-300 m-5'
 
     const teamName = document.createElement('h2');
     teamName.textContent = team.strTeam;
+    teamName.className = 'font-semibold';
 
     const teamBadge = document.createElement('img');
     teamBadge.src = team.strTeamBadge;

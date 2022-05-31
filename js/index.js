@@ -60,7 +60,7 @@ const searchTeams = () => {
                         .then(responseTeams => responseTeams.json())
                         .then(responseJsonTeams => {
                             localStorage.setItem('data',JSON.stringify(responseJsonTeams));
-                            window.open(`../view/teams.html?league=${leagueTeam}`, '_self');                            
+                            window.open(`../public/view/teams.html?league=${leagueTeam}`, '_self');                            
                         })
                         .catch(error => console.error(error))
                 }
