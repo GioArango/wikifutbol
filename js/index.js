@@ -63,15 +63,8 @@ const searchTeams = () => {
                             window.open(`../view/teams.html?league=${leagueTeam}`, '_self');                            
                         })
                         .catch(error => console.error(error))
-
-                    // hola(event);
                 }
             });
-
-            const hola = (btn) => {
-                console.log(btn.target.id)
-            }
-
         })
 }
 
